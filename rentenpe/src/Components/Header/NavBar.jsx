@@ -1,12 +1,12 @@
 import React from 'react';
 import './Header.css';
-import logo from './Img/logo.png'
+import icon from './Image/icon.png';
 
 function NavBar() {
     return (
         <div className='Container'>
             <div className='left'>
-            <img id='imagelogo' src={logo} alt="Description of the image" />
+            <img id='imagelogo' src={icon} alt="Description of the image" />
             <p id="logoFont">RENTEN PE</p>
             </div>
             <div className='middle'>

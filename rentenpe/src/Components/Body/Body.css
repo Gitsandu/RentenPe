@@ -1,91 +1,128 @@
-.curCont{
-    height: 100vh;
+.bodyCont{
+    width: 100%;
+    height: 1700px;
+    position: relative;
+    border: 1px solid black;
+    background-color: black;
+}
+.bodyTop{
+    width: 100%;
+    height: 35%;
+    background-color: black;
+}
+.bodyBottom{
+    width: 100%;
+    height: 60%;
+    background-color: #104845;
+    display: flex;
+    justify-content:center;
+    position: relative;
+}
+
+.bodyMiddle {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 954px;
+    height: 860px;
+    border-radius: 18px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
-  }
-  *:before,
-  *:after{
-    box-sizing: border-box;
-  }
-  html,
-  body{
-    min-height: 100%;
-  }
-  body{
-    background-image: radial-gradient(mintcream 0%, lightgray 100%);
-  }
-  h1{
-    display: table;
-    margin: 5% auto 0;
-    text-transform: uppercase;
-    font-family: 'Anaheim', sans-serif;
-    font-size: 4em;
-    font-weight: 400;
-    text-shadow: 0 1px white, 0 2px black;
-  }
-  .cd__main{
-  display: block !important;
-  }
-  .container{
-    margin: 4% auto;
-    width: 210px;
-    height: 200px;
-    position: relative;
-    perspective: 1000px;
-  }
-  #carousel{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    animation: rotation 20s infinite linear;
-  }
-  #carousel:hover{
-    animation-play-state: paused;
-  }
-  #carousel figure{
-    display: block;
-    position: absolute;
-    width: 150px;
-    height: 300px;
-    left: 10px;
-    top: 10px;
-    background: black;
-    overflow: hidden;
-    border: solid 5px black;
-  }
-  #carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
-  #carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
-  #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
-  #carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
-  #carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
-  #carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
-  #carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
-  #carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
-  #carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
-  
-  img{
-    -webkit-filter: grayscale(1);
+
+
+.middleBox{
+    width: 792px;
+    height: 668px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 32px;
+    padding-right: 16px;
+}
+
+/* Add styles for the accordion, accordionHeader, and accordionContent as needed */
+
+.accordion {
+}
+
+.accordionHeader {
     cursor: pointer;
-    transition: all .5s ease;
-  }
-  img:hover{
-    -webkit-filter: grayscale(0);
-    transform: scale(1.2,1.2);
-  }
-  
-  @keyframes rotation{
-    from{
-      transform: rotateY(0deg);
-    }
-    to{
-      transform: rotateY(360deg);
-    }
-  }
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.accordionContent {
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+}
+
+.accordion.open .accordionHeader {
+    color: #CB982A;
+}
+
+.accordion.open .accordionContent {
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.BottomBox{
+    width: 1152px;
+    height: 504.32px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.childBottomBox{
+    width: 100%;
+    height: 308px;
+    background-color: #CB982A;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 50px;
+}
+.secondChildBottomBox {
+    width: 450px; /* Adjust width as needed */
+    height: 700px;
+    position: absolute;
+    top: -10%;
+    right: -2.5%;
+    z-index: 1; /* Higher z-index to make it overlap childBottomBox */
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 178px;
+    line-height: 1px;
+    justify-content: space-evenly;
+}
+
+#bodyFont1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#bodyFont2{
+    font-size: 18px;
+}
+#appleButton{
+    width: 210px;
+    height: 60px;
+    background-color: black;
+}
+#fontBodyTop{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
