@@ -125,19 +125,15 @@
 }
 .backGrad {
   position: absolute;
-  top: 27px;
-  left: 150px;
-  width: 704px;
-  height: 704px;
-  background: radial-gradient(
-    circle,
-    rgba(202, 150, 41, 1),
-    rgba(255, 174, 0, 0.4) 10%,
-    rgba(0, 0, 0, 0.75)
-  );
+  top: 140px;
+  left: 300px;
+  width: 500px;
+  height: 500px;
+  background-color: #ca9629;
   z-index: 1;
   border-radius: 50%;
   opacity: 0.5;
+  box-shadow: -24px -31px 60px 125px rgba(202, 150, 41, 1);
 }
 
 #phone {

@@ -1,12 +1,12 @@
 import React from "react";
-import NavBar from "./NavBar";
 import HeaderBody from "./HeaderBody";
+import ToggleNavBar from "../Navbar/ToggleNavBar";
 
 function Header(props) {
   return (
     <div>
 
-      <NavBar></NavBar>
+      <ToggleNavBar></ToggleNavBar>
       <HeaderBody></HeaderBody>
     </div>
   );
