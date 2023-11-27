@@ -39,7 +39,7 @@
 
 .middleBox {
     width: 792px;
-    height: 668px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -49,19 +49,26 @@
 
 /* Add styles for the accordion, accordionHeader, and accordionContent as needed */
 
-.accordion {}
+.accordion {
+    border-bottom: 2px solid #CB982A;
+    
+}
 
 .accordionHeader {
     cursor: pointer;
     padding: 10px;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 .accordionContent {
     cursor: pointer;
-    padding: 10px 10px 10px 10px;
+    padding: 20px 10px 30px 10px;
     font-size: 18px;
+    color: white;
 }
 
 .accordion.open .accordionHeader {

@@ -1,14 +1,15 @@
-import React from 'react';
-import NavBar from './NavBar';
-import HeaderBody from './HeaderBody';
+import React from "react";
+import HeaderBody from "./HeaderBody";
+import ToggleNavBar from "../Navbar/ToggleNavBar";
 
 function Header(props) {
-    return (
-        <div>
-            <NavBar></NavBar>
-            <HeaderBody></HeaderBody>
-        </div>
-    );
+  return (
+    <div>
+
+      <ToggleNavBar></ToggleNavBar>
+      <HeaderBody></HeaderBody>
+    </div>
+  );
 }
 
 export default Header;
