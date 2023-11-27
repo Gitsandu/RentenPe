@@ -5,7 +5,6 @@ import ToggleNavBar from "../Navbar/ToggleNavBar";
 function Header(props) {
   return (
     <div>
-
       <ToggleNavBar></ToggleNavBar>
       <HeaderBody></HeaderBody>
     </div>

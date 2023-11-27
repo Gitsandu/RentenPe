@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="App">
        <Header></Header>
-      <ImageCarousel></ImageCarousel> 
-       {/* <BottomBody></BottomBody>  */}
-       <FAQFunction></FAQFunction>
-      <Footer></Footer> 
+      {/* <ImageCarousel></ImageCarousel>  */}
+      {/* <BottomBody></BottomBody>  */}
+      {/* <FAQFunction></FAQFunction>
+      <Footer></Footer>  */}
       {/* <ToggleNavBar></ToggleNavBar> */}
     </div>
   );
