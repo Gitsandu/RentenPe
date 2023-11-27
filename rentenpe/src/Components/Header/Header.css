@@ -157,5 +157,121 @@ color: white;
     border-radius: 50%;
     opacity: 0.4; 
   } */
+  @media only screen and (max-width: 720px) {
+    .topCont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .Container {
+        display: flex;
+        width: 100%;
+        height: 96px;
+        justify-content: left;
+        background-color: #1e1e1e;
+        position: absolute;
+      }
+
+    .left {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row; 
+    }
+
+    #logoFont {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .middle {
+        width: 100%;
+        align-items: flex-start; 
+        flex-direction: row;
+        justify-content: space-between; 
+        margin-top: 50px; 
+        padding: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .Container {
+      display: flex;
+      width: 100%;
+      height: 96px;
+      justify-content: left;
+      background-color: #1e1e1e;
+      position: absolute;
+    }
+    .left {
+      height: 56px;
+      width: 10%;
+      color: white;
+      border: 1px solid white;
+      padding-left: 20px;
+    }
+    .right {
+      display: none;
+    }
+    .middle {
+      display: none;
+    }
+   
+    #logoFont {
+      font-size: 15px;
+      font-weight: bold;
+    }
+    #imagelogo {
+      height: 35px;
+      width: 35px;
+      margin-right: 20px;
+    }
+    .logocont {
+      display: flex;
+      justify-content: left;
+    }
+    #phone {display: none;
+    }
+    .LeftHead {
+      width: 90%;
+      position: relative;
+    }
+    #headerCont {
+      position: absolute;
+      top: 280px;
+      font-size: 20px;
+      color: #ca9629;
+      margin-left: 26px;
+      font-weight: bold;
+    }
+    .RightHead {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .buttonCont {
+      position: absolute;
+      top: 500px;
+      display: flex;
+      margin-left: 26px;
+      justify-content: left;
+    }
+    .storeBtn {
+      width: 106px;
+      height: 28px;
+      border-radius: 41px;
+      background-color: white;
+      margin-right: 16px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .backGrad {
+   
+      display: none;
+    }
+  }
 
   

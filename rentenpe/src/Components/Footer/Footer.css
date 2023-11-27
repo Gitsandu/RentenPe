@@ -33,7 +33,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    height: 500px;
+    height: 700px;
     background-color: black;
 }
 .leftCont{
@@ -81,10 +81,107 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+    
 }
 
 .FootCont{
     padding-left: 40px;
     padding-right: 40px;
     background-color: black;
+}
+@media only screen and (max-width: 720px){
+    .middleCont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .MiddleRight{
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .RightSide{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .leftCont{
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .end{
+        font-size: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .MiddleLeft{ 
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom{
+        width: 100%;
+        margin-top: 50px;
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 480px){
+    .middleCont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .MiddleRight{
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .RightSide{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .leftCont{
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .end{
+        font-size: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .MiddleLeft{ 
+        font-size: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom{
+        width: 100%;
+        margin-top: 50px;
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
